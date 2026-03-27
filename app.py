@@ -9,5 +9,9 @@ def home():
 def app_page():
     return "Hi Sankuri its app page 🚀"
 
+@app.route("/menu")
+def menu_page():
+    return "This is Menu 🚀"
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
