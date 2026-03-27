@@ -16,6 +16,7 @@ pipeline {
                 docker stop myapp1 || true
                 docker rm myapp1 || true
                 set -e
+                
                 docker run -d -p 5000:5000 --name myapp1 flask-app:latest
                 '''
             }
