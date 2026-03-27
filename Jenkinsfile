@@ -11,7 +11,9 @@ pipeline {
 
         stage('Run Container (Test)') {
             steps {
-                sh 'docker run -d -p 5000:5000 flask-app:latest || true'
+                sh 'docker stop myapp1'
+                sh 'docker rm myapp1'
+                sh 'docker run -d -p 5000:5000 --name myapp flask-app:latest || true'
             }
         }
     }
