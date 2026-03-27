@@ -6,7 +6,7 @@ def home():
     return "Hello from Jenkins + Kubernetes 🚀"
 
 @app.route("/app")
-def home():
+def app():
     return "Hi Sankuri its app page 🚀"
 
 if __name__ == "__main__":
