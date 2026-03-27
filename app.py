@@ -13,5 +13,9 @@ def app_page():
 def menu_page():
     return "This is Menu 🚀"
 
+@app.route("/test")
+def test_page():
+    return "This is Test 🚀"
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
