@@ -1,0 +1,8 @@
+image:
+  repository: 272084046243.dkr.ecr.ap-south-1.amazonaws.com/flask-app
+  tag: latest
+
+service:
+  type: NodePort
+  port: 5000
+  nodePort: 30007
